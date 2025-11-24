@@ -11,21 +11,25 @@ def choose():
 
 def select_file(ftype):
     root = tk.Tk()
+    root.attributes("-topmost", True)
     root.withdraw()
     if ftype == "dart":
-        return filedialog.askopenfilename(filetypes=[("Dart files", "*.dart")])
-    if ftype == "json":
-        return filedialog.askopenfilename(filetypes=[("JSON files", "*.json")])
-    return None
+        path = filedialog.askopenfilename(filetypes=[("Dart files", "*.dart")])
+    else:
+        path = filedialog.askopenfilename(filetypes=[("JSON files", "*.json")])
+    root.destroy()
+    return path
 
 def select_save(ext):
     root = tk.Tk()
+    root.attributes("-topmost", True)
     root.withdraw()
     if ext == "json":
-        return filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON files", "*.json")])
-    if ext == "xlsx":
-        return filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])
-    return None
+        path = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON files", "*.json")])
+    else:
+        path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])
+    root.destroy()
+    return path
 
 def strip_comments(text):
     text = re.sub(r'/\*.*?\*/', '', text, flags=re.DOTALL)
@@ -63,15 +67,18 @@ def ask_langs():
         l = input()
         if l.strip() == "":
             break
-        lines.append(l)
+        lines.append(l.strip())
 
     text = "\n".join(lines)
     text = re.sub(r'//.*', '', text)
     text = re.sub(r'/\*.*?\*/', '', text, flags=re.DOTALL)
 
-    codes = re.findall(r"Locale\('([a-zA-Z\-]+)'\)", text)
+    codes = []
+    codes += re.findall(r"Locale\('([a-zA-Z\-]+)'\)", text)
     codes += re.findall(r'"([a-zA-Z\-]+)"', text)
+    codes += re.findall(r'\b([a-zA-Z]{2,3}(?:-[A-Za-z0-9]+)?)\b', text)
 
+    codes = [c for c in codes if len(c) >= 2]
     codes = sorted(list(set(codes)))
 
     print("Detected language codes:")
@@ -83,9 +90,15 @@ def ask_langs():
 def build_excel(keys, codes):
     wb = Workbook()
     ws = wb.active
-    ws.append(["Key"] + codes)
+    header = ["en", "en"] + codes
+    ws.append(header)
+    row_num = 2
     for k in keys:
-        ws.append([k] + [""] * len(codes))
+        row = [k, k]
+        for lang in codes:
+            row.append('=GOOGLETRANSLATE($A' + str(row_num) + ', "en", "' + lang + '")')
+        ws.append(row)
+        row_num += 1
     return wb
 
 def handle_dart():
