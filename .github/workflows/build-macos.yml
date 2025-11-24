@@ -24,7 +24,7 @@ jobs:
 
     - name: build app
       run: |
-       pyinstaller --onefile --windowed LocalizationConverter.py
+       pyinstaller --onefile --windowed localizer_app.py
 
     - name: upload
       uses: actions/upload-artifact@v4
