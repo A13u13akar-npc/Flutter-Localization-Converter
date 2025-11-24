@@ -100,6 +100,6 @@ The tool auto-detects and sorts them.
 
 # 🔄 Convert XLSX → JSON
 
-Use the web tool to convert your completed translations into JSON files:
+Use the built-in tool or this web tool to convert your completed translations into JSON files, both work great:
 
 👉 [https://muslimeclix.github.io/flutter-localization-converter/](https://muslimeclix.github.io/flutter-localization-converter/)
