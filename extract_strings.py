@@ -1,13 +1,17 @@
 import json
 import re
+import os
 import tkinter as tk
 from tkinter import filedialog
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
+
 
 def choose():
     print("1. Process Dart file")
     print("2. Process JSON file")
+    print("3. Convert Excel → JSONs")
     return input("Select: ").strip()
+
 
 def select_file(ftype):
     root = tk.Tk()
@@ -15,10 +19,15 @@ def select_file(ftype):
     root.withdraw()
     if ftype == "dart":
         path = filedialog.askopenfilename(filetypes=[("Dart files", "*.dart")])
-    else:
+    elif ftype == "json":
         path = filedialog.askopenfilename(filetypes=[("JSON files", "*.json")])
+    elif ftype == "excel":
+        path = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx")])
+    else:
+        path = ""
     root.destroy()
     return path
+
 
 def select_save(ext):
     root = tk.Tk()
@@ -31,6 +40,16 @@ def select_save(ext):
     root.destroy()
     return path
 
+
+def select_folder():
+    root = tk.Tk()
+    root.attributes("-topmost", True)
+    root.withdraw()
+    path = filedialog.askdirectory()
+    root.destroy()
+    return path
+
+
 def strip_comments(text):
     text = re.sub(r'/\*.*?\*/', '', text, flags=re.DOTALL)
     cleaned = []
@@ -40,10 +59,12 @@ def strip_comments(text):
             cleaned.append(line)
     return "\n".join(cleaned)
 
+
 def normalize(s):
     s = s.replace("\\n", "\n")
     s = s.replace("\n", "\\n")
     return s
+
 
 def extract_dart(text):
     text = strip_comments(text)
@@ -53,12 +74,14 @@ def extract_dart(text):
         out.append(normalize(m))
     return out
 
+
 def extract_json_keys(path):
     with open(path, "r", encoding="utf-8") as f:
         raw = f.read()
     raw = strip_comments(raw)
     data = json.loads(raw)
     return list(data.keys())
+
 
 def ask_langs():
     print("Paste the supported languages list below. Finish with an empty line:")
@@ -87,6 +110,7 @@ def ask_langs():
 
     return codes
 
+
 def build_excel(keys, codes):
     wb = Workbook()
     ws = wb.active
@@ -100,6 +124,72 @@ def build_excel(keys, codes):
         ws.append(row)
         row_num += 1
     return wb
+
+
+def write_clean_json(path, data):
+    def clean(text):
+        if text is None:
+            return ""
+        text = str(text)
+        text = text.replace("\r\n", "\n")
+        text = text.replace("\n", "\\n")
+        text = text.replace('"', '\\"')
+        text = text.strip()
+        return text
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("{\n")
+        items = list(data.items())
+        for i, (k, v) in enumerate(items):
+            k = clean(k)
+            v = clean(v)
+            line = f'  "{k}": "{v}"'
+            if i < len(items) - 1:
+                line += ","
+            f.write(line + "\n")
+        f.write("}")
+
+
+def excel_to_json(folder_path, excel_file):
+    wb = load_workbook(excel_file, data_only=True)
+    ws = wb.active
+
+    headers = [str(cell.value).strip() if cell.value else "" for cell in ws[1]]
+
+    language_codes = []
+    for code in headers:
+        if not code:
+            continue
+        if code == "en" and "en" not in language_codes:
+            language_codes.append("en")
+        elif code == "en":
+            continue
+        else:
+            language_codes.append(code)
+
+    keys = []
+    values = {lang: [] for lang in language_codes}
+
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        key = row[0]
+        if not key:
+            continue
+        keys.append(key)
+        for lang in language_codes:
+            col_index = headers.index(lang)
+            val = row[col_index] if col_index < len(row) and row[col_index] else ""
+            values[lang].append(val)
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    for lang in language_codes:
+        data = {keys[i]: values[lang][i] for i in range(len(keys))}
+        json_path = os.path.join(folder_path, f"{lang}.json")
+        write_clean_json(json_path, data)
+
+    return True
+
 
 def handle_dart():
     print("Choose Dart file")
@@ -147,6 +237,7 @@ def handle_dart():
         print("Saved:", save)
         return
 
+
 def handle_json():
     print("Choose JSON file")
     path = select_file("json")
@@ -176,14 +267,38 @@ def handle_json():
         print("Saved:", save)
         return
 
+
+def handle_excel_to_json():
+    print("Choose Excel file (.xlsx)")
+    excel = select_file("excel")
+    if not excel:
+        print("No file selected")
+        return
+
+    print("Choose output folder for JSON files")
+    folder = select_folder()
+    if not folder:
+        print("No folder selected")
+        return
+
+    try:
+        excel_to_json(folder, excel)
+        print("JSONs exported successfully to:", folder)
+    except Exception as e:
+        print("Failed to convert Excel to JSONs:", e)
+
+
 def main():
     c = choose()
     if c == "1":
         handle_dart()
     elif c == "2":
         handle_json()
+    elif c == "3":
+        handle_excel_to_json()
     else:
         print("Invalid option")
+
 
 if __name__ == "__main__":
     main()
