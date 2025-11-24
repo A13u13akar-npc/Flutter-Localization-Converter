@@ -57,9 +57,7 @@ def ask_languages_popup(root):
         val.set(txt.get("1.0", tk.END))
         win.destroy()
 
-    btn_frame = tk.Frame(win)
-    btn_frame.pack(pady=10)
-    tk.Button(btn_frame, text="OK", width=12, command=done).pack()
+    tk.Button(win, text="OK", width=12, command=done).pack(pady=10)
 
     win.bind("<Control-Return>", done)
     win.bind("<Command-Return>", done)
@@ -74,9 +72,8 @@ def ask_languages_popup(root):
     codes += re.findall(r"Locale\('([a-zA-Z\-]+)'\)", raw)
     codes += re.findall(r'"([a-zA-Z\-]+)"', raw)
     codes += re.findall(r'\b([a-zA-Z]{2,3}(?:-[A-Za-z0-9]+)?)\b', raw)
-    codes = sorted(list(set(codes)))
 
-    return codes
+    return sorted(list(set(codes)))
 
 
 def build_excel(keys, codes, save_path):
@@ -96,29 +93,51 @@ def build_excel(keys, codes, save_path):
     wb.save(save_path)
 
 
-# **************************************
-# FIXED JSON WRITER – NO ESCAPING
-# **************************************
+# --------------------------------------------------------
+# FIXED JSON WRITER — ESCAPES QUOTES, FIXES MULTILINES
+# --------------------------------------------------------
 def write_clean_json(path, data):
+
+    def clean(text):
+        if text is None:
+            return ""
+
+        text = str(text)
+
+        # Normalize newline types
+        text = text.replace("\r\n", "\n")
+
+        # Convert REAL Excel newlines → \n literal
+        text = text.replace("\n", "\\n")
+
+        # Escape double quotes
+        text = text.replace('"', '\\"')
+
+        # Trim accidental trailing spaces
+        text = text.strip()
+
+        return text
+
     with open(path, "w", encoding="utf-8") as f:
         f.write("{\n")
         items = list(data.items())
 
         for i, (k, v) in enumerate(items):
-            v = v.replace("\\n", "\n")  # ensure real newline
-            v = v.replace("\n", "\\n")  # store as \n literal
+            k = clean(k)   # 🔥 fix newline inside keys
+            v = clean(v)   # 🔥 fix newline inside values
 
             line = f'  "{k}": "{v}"'
             if i < len(items) - 1:
                 line += ","
+
             f.write(line + "\n")
 
         f.write("}")
 
 
-# **************************************
+# --------------------------------------------------------
 # EXCEL → JSON (FINAL FIXED VERSION)
-# **************************************
+# --------------------------------------------------------
 def excel_to_json(folder_path, excel_file):
     wb = load_workbook(excel_file, data_only=True)
     ws = wb.active
@@ -149,27 +168,28 @@ def excel_to_json(folder_path, excel_file):
         for lang in language_codes:
             col_index = headers.index(lang)
             val = row[col_index] if col_index < len(row) and row[col_index] else ""
-
-            val = str(val)
-            val = val.replace("\n", "\\n")  # convert real nl → \n for JSON
-
             values[lang].append(val)
 
+    # Create folder if needed
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
+    # Write each language JSON
     for lang in language_codes:
         data = {keys[i]: values[lang][i] for i in range(len(keys))}
-        json_path = os.path.join(folder_path, f"{lang}.json")
-        write_clean_json(json_path, data)
+        json_file = os.path.join(folder_path, f"{lang}.json")
+        write_clean_json(json_file, data)
 
     return True
 
 
+# --------------------------------------------------------
+# GUI APPLICATION
+# --------------------------------------------------------
 def create_app():
     root = tk.Tk()
     root.title("Localization Tool")
-    root.geometry("500x570")
+    root.geometry("500x590")
 
     selected_file = tk.StringVar()
     log = tk.StringVar()
@@ -194,14 +214,18 @@ def create_app():
         if not p:
             messagebox.showerror("Error", "No file selected")
             return
+
         try:
             items = extract_dart_strings(p)
             save = filedialog.asksaveasfilename(defaultextension=".json")
+
             if save:
                 raw = json.dumps({s: s for s in items}, ensure_ascii=False, indent=2)
                 raw = raw.replace("\\\\n", "\\n")
+
                 with open(save, "w", encoding="utf-8") as f:
                     f.write(raw)
+
                 log_msg("JSON saved")
         except:
             messagebox.showerror("Error", "Conversion failed")
@@ -211,15 +235,17 @@ def create_app():
         if not p:
             messagebox.showerror("Error", "No file selected")
             return
+
         try:
             keys = extract_dart_strings(p) if p.endswith(".dart") else extract_json_keys(p)
             codes = ask_languages_popup(root)
+
             save = filedialog.asksaveasfilename(defaultextension=".xlsx")
             if save:
                 build_excel(keys, codes, save)
                 log_msg("Excel saved")
         except Exception as e:
-            messagebox.showerror("Error", f"Failed to generate Excel:\n{e}")
+            messagebox.showerror("Error", f"Failed:\n{e}")
 
     def excel_to_json_action():
         excel = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx")])
