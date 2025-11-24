@@ -14,6 +14,17 @@ No Python required — just download and run.
 
 ---
 
+# 🍎 Desktop App (macOS)
+
+A ready-to-use **macOS Application** is available.
+
+### 👉 **[Download Localizer.app (macOS)](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/mac-build.zip)**
+
+This is a zipped `.app` bundle.
+Unzip it and run `localizer_app.app` on macOS.
+
+---
+
 # 💻 Command-Line Tool (Cross-Platform)
 
 If you prefer using the CLI version, use the included script:
@@ -27,9 +38,9 @@ extract_strings.py
 * **Python**
 * Install dependency:
 
-  ```
-  python -m pip install openpyxl
-  ```
+```
+python -m pip install openpyxl
+```
 
 ---
 
@@ -37,32 +48,32 @@ extract_strings.py
 
 1. Run:
 
-   ```
-   python extract_strings.py
-   ```
+```
+python extract_strings.py
+```
 
 2. Choose:
 
-   * **1️⃣ Process Dart file**
-   * **2️⃣ Process JSON file**
+* 1️⃣ Process Dart file
+* 2️⃣ Process JSON file
 
 3. Select an action:
 
-   * 🔍 Print extracted strings
-   * 📄 Convert to JSON
-   * 📊 Generate translation.xlsx
+* 🔍 Print extracted strings
+* 📄 Convert to JSON
+* 📊 Generate translation.xlsx
 
 4. Paste your language codes in any format:
 
-   ```
-   en
-   es
-   af
-   ar
-   ...
-   ```
+```
+en
+es
+af
+ar
+...
+```
 
-   The tool auto-detects and sorts them.
+The tool auto-detects and sorts them.
 
 ---
 
@@ -72,9 +83,9 @@ extract_strings.py
 * **Column B** → Editable English copy
 * **Remaining columns** → Google Translate formulas:
 
-  ```
-  =GOOGLETRANSLATE($A2, "en", "<lang>")
-  ```
+```
+=GOOGLETRANSLATE($A2, "en", "<lang>")
+```
 
 ---
 
