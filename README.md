@@ -1,6 +1,26 @@
 # 🌐 Localization Extractor & Translation Generator
 
-A simple tool to extract strings from Dart/JSON files and generate a translation-ready Excel sheet.
+Extract localization strings from Dart/JSON files, generate translation-ready Excel sheets, and convert final translations into JSON.
+
+---
+
+# 🖥️ Desktop App (Windows)
+
+A ready-to-use **Windows Desktop Application** is available.
+
+### 👉 **[Download Localizer.exe](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/Localizer.exe)**
+
+No Python required — just download and run.
+
+---
+
+# 💻 Command-Line Tool (Cross-Platform)
+
+If you prefer using the CLI version, use the included script:
+
+```
+extract_strings.py
+```
 
 ## 📦 Requirements
 
@@ -11,9 +31,11 @@ A simple tool to extract strings from Dart/JSON files and generate a translation
   python -m pip install openpyxl
   ```
 
-## 🚀 How to Use
+---
 
-1. Run the script:
+# 🚀 How to Use (CLI Version)
+
+1. Run:
 
    ```
    python extract_strings.py
@@ -30,7 +52,7 @@ A simple tool to extract strings from Dart/JSON files and generate a translation
    * 📄 Convert to JSON
    * 📊 Generate translation.xlsx
 
-4. When prompted, paste your language codes in any format:
+4. Paste your language codes in any format:
 
    ```
    en
@@ -42,25 +64,31 @@ A simple tool to extract strings from Dart/JSON files and generate a translation
 
    The tool auto-detects and sorts them.
 
-## 📊 translation.xlsx Format
+---
+
+# 📊 translation.xlsx Format
 
 * **Column A** → English source
-* **Column B** → Copy of English (editable)
-* **Other columns** → Auto Google Translate formulas:
+* **Column B** → Editable English copy
+* **Remaining columns** → Google Translate formulas:
 
   ```
   =GOOGLETRANSLATE($A2, "en", "<lang>")
   ```
 
-## ☁️ Translate in Google Sheets
+---
+
+# ☁️ Translate in Google Sheets
 
 1. Upload the generated XLSX to Google Drive
-2. Open in **Google Sheets** – translations auto-fill
-3. Review/edit
+2. Open in **Google Sheets** (auto-fills translations)
+3. Review or edit manually
 4. Download as XLSX
 
-## 🔄 Convert XLSX → JSON
+---
 
-Use this tool to generate per-language JSONs:
+# 🔄 Convert XLSX → JSON
+
+Use the web tool to convert your completed translations into JSON files:
+
 👉 [https://muslimeclix.github.io/flutter-localization-converter/](https://muslimeclix.github.io/flutter-localization-converter/)
-
