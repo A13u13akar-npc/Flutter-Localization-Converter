@@ -27,7 +27,7 @@ Unzip it and run `localizer_app.app` on macOS.
 
 # 💻 Command-Line Tool (Cross-Platform)
 
-If you prefer using the CLI version, use the included script:
+If you prefer using the CLI version, use the included script (CLI version is obselete apllications recommended!!!) :
 
 ```
 extract_strings.py
