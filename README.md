@@ -8,7 +8,7 @@ Extract localization strings from Dart/JSON files, generate translation-ready Ex
 
 A ready-to-use **Windows Desktop Application** is available.
 
-### 👉 **[Download Localizer.zip](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/localizer.zip)**
+### 👉 **[Download Localizer.zip](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/localizer/localizer.zip)**
 
 No Python required — just download and run.
 
