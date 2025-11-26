@@ -18,7 +18,7 @@ No Python required — just download and run.
 
 A ready-to-use **macOS Application** is available.
 
-### 👉 **[Download Localizer.app (macOS)](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/mac-build.zip)**
+### 👉 **[Download Localizer.app (macOS)](https://github.com/A13u13akar-npc/Flutter-Localization-Converter/raw/main/dist/Localizer-macOS.zip)**
 
 This is a zipped `.app` bundle.
 Unzip it and run `localizer_app.app` on macOS.
