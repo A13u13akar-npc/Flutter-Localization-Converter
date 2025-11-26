@@ -1,6 +1,334 @@
 ('C:\\Users\\LAPTOPI '
- 'HUB\\Documents\\Flutter-Localization-Converter\\build\\Localizer\\PYZ-00.pyz',
- [('__future__',
+ 'HUB\\Documents\\Flutter-Localization-Converter\\build\\localizer\\PYZ-00.pyz',
+ [('PIL',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.AvifImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\AvifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageDraw',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageDraw.py',
+   'PYMODULE'),
+  ('PIL.ImageDraw2',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageDraw2.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageFont',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageFont.py',
+   'PYMODULE'),
+  ('PIL.ImageGrab',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageGrab.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImagePath',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImagePath.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageText',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageText.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('__future__',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\__future__.py',
    'PYMODULE'),
@@ -76,6 +404,10 @@
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\codeop.py',
    'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\colorsys.py',
+   'PYMODULE'),
   ('compression',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\compression\\__init__.py',
@@ -111,6 +443,18 @@
   ('csv',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\csv.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes._layout',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\ctypes\\_layout.py',
    'PYMODULE'),
   ('dataclasses',
    'C:\\Users\\LAPTOPI '
@@ -1140,6 +1484,10 @@
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\selectors.py',
    'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\shlex.py',
+   'PYMODULE'),
   ('shutil',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\shutil.py',
@@ -1208,6 +1556,10 @@
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\tkinter\\filedialog.py',
    'PYMODULE'),
+  ('tkinter.font',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\tkinter\\font.py',
+   'PYMODULE'),
   ('tkinter.messagebox',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\tkinter\\messagebox.py',
@@ -1231,6 +1583,130 @@
   ('tracemalloc',
    'C:\\Users\\LAPTOPI '
    'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('ttkbootstrap',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\__init__.py',
+   'PYMODULE'),
+  ('ttkbootstrap.colorutils',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\colorutils.py',
+   'PYMODULE'),
+  ('ttkbootstrap.constants',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\constants.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\__init__.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.base',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\base.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.colorchooser',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\colorchooser.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.colordropper',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\colordropper.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.datepicker',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\datepicker.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.dialogs',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\dialogs.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.fontdialog',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\fontdialog.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.message',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\message.py',
+   'PYMODULE'),
+  ('ttkbootstrap.dialogs.query',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\dialogs\\query.py',
+   'PYMODULE'),
+  ('ttkbootstrap.icons',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\icons.py',
+   'PYMODULE'),
+  ('ttkbootstrap.localization',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\localization\\__init__.py',
+   'PYMODULE'),
+  ('ttkbootstrap.localization.msgcat',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\localization\\msgcat.py',
+   'PYMODULE'),
+  ('ttkbootstrap.localization.msgs',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\localization\\msgs.py',
+   'PYMODULE'),
+  ('ttkbootstrap.publisher',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\publisher.py',
+   'PYMODULE'),
+  ('ttkbootstrap.style',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\style.py',
+   'PYMODULE'),
+  ('ttkbootstrap.themes',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\themes\\__init__.py',
+   'PYMODULE'),
+  ('ttkbootstrap.themes.standard',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\themes\\standard.py',
+   'PYMODULE'),
+  ('ttkbootstrap.themes.user',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\themes\\user.py',
+   'PYMODULE'),
+  ('ttkbootstrap.utility',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\utility.py',
+   'PYMODULE'),
+  ('ttkbootstrap.validation',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\validation.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.dateentry',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\dateentry.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.floodgauge',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\floodgauge.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.labeledscale',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\labeledscale.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.meter',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\meter.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.toast',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\toast.py',
+   'PYMODULE'),
+  ('ttkbootstrap.widgets.tooltip',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\widgets\\tooltip.py',
+   'PYMODULE'),
+  ('ttkbootstrap.window',
+   'C:\\Users\\LAPTOPI '
+   'HUB\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\ttkbootstrap\\window.py',
    'PYMODULE'),
   ('typing',
    'C:\\Users\\LAPTOPI '
