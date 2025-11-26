@@ -8,26 +8,30 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: checkout
+    - name: Checkout
       uses: actions/checkout@v4
 
-    - name: setup python
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    - name: install requirements
+    - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pip install pyinstaller openpyxl
+        pip install pyinstaller openpyxl ttkbootstrap
 
-    - name: build app
+    - name: Build macOS .app
       run: |
-       pyinstaller --onefile --windowed localizer_app.py
+        pyinstaller \
+          --windowed \
+          --name Localizer \
+          --icon=icon.icns \
+          localizer.py
 
-    - name: upload
+    - name: Upload macOS App Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: mac-build
-        path: dist/*
+        name: Localizer-macOS
+        path: dist/Localizer.app
