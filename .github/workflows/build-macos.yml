@@ -26,12 +26,19 @@ jobs:
       run: |
         pyinstaller \
           --windowed \
+          --noconfirm \
+          --clean \
           --name Localizer \
-          --icon=icon.icns \
+          --icon icon.icns \
           localizer.py
+
+    - name: Zip the .app bundle
+      run: |
+        cd dist
+        zip -r Localizer-macOS.zip Localizer.app
 
     - name: Upload macOS App Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Localizer-macOS
-        path: dist/Localizer.app
+        path: dist/Localizer-macOS.zip
